@@ -1,0 +1,601 @@
+{
+	"info": {
+		"_postman_id": "16c02260-7534-4cdd-8554-d8a5643b9795",
+		"name": "API_Яндекс",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27190261",
+		"_collection_link": "https://crimson-trinity-166991.postman.co/workspace/CoursWork2~22f43a26-0f7c-4bb7-9428-5c71ed2801b1/collection/27190261-16c02260-7534-4cdd-8554-d8a5643b9795?action=share&source=collection_link&creator=27190261"
+	},
+	"item": [
+		{
+			"name": "positive",
+			"item": [
+				{
+					"name": "T_50_-55_ru_positive",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Yandex-API-Key",
+								"value": "{{key_ya}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://{{baseURL}}?lat=-55&lon=50&lang=ru_RU",
+							"protocol": "https",
+							"host": [
+								"{{baseURL}}"
+							],
+							"query": [
+								{
+									"key": "lat",
+									"value": "-55"
+								},
+								{
+									"key": "lon",
+									"value": "50"
+								},
+								{
+									"key": "lang",
+									"value": "ru_RU"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "T_50_-55_ru_positive1",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Yandex-API-Key",
+								"value": "{{key_ya}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://{{baseURL}}?lat=-0000055&lon=50&lang=ru",
+							"protocol": "https",
+							"host": [
+								"{{baseURL}}"
+							],
+							"query": [
+								{
+									"key": "lat",
+									"value": "-0000055"
+								},
+								{
+									"key": "lon",
+									"value": "50"
+								},
+								{
+									"key": "lang",
+									"value": "ru"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "T_50_-55_ru_positive2",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Yandex-API-Key",
+								"value": "{{key_ya}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://{{baseURL}}?lat=-55&lon=00000050&lang=ru",
+							"protocol": "https",
+							"host": [
+								"{{baseURL}}"
+							],
+							"query": [
+								{
+									"key": "lat",
+									"value": "-55"
+								},
+								{
+									"key": "lon",
+									"value": "00000050"
+								},
+								{
+									"key": "lang",
+									"value": "ru"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "negative",
+			"item": [
+				{
+					"name": "T_50(er)_-55_ru_neg",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Yandex-API-Key",
+								"value": "{{key_ya}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://{{baseURL}}?lat=-&lon=50&lang=ru",
+							"protocol": "https",
+							"host": [
+								"{{baseURL}}"
+							],
+							"query": [
+								{
+									"key": "lat",
+									"value": "-"
+								},
+								{
+									"key": "lon",
+									"value": "50"
+								},
+								{
+									"key": "lang",
+									"value": "ru"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "T_50(er2)_-55_ru_neg",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Yandex-API-Key",
+								"value": "{{key_ya}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://{{baseURL}}?lat=-91&lon=50",
+							"protocol": "https",
+							"host": [
+								"{{baseURL}}"
+							],
+							"query": [
+								{
+									"key": "lat",
+									"value": "-91"
+								},
+								{
+									"key": "lon",
+									"value": "50"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "T_50(er3)_-55_ru_neg",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Yandex-API-Key",
+								"value": "{{key_ya}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://{{baseURL}}?lat=f&lon=50&lang=ru",
+							"protocol": "https",
+							"host": [
+								"{{baseURL}}"
+							],
+							"query": [
+								{
+									"key": "lat",
+									"value": "f"
+								},
+								{
+									"key": "lon",
+									"value": "50"
+								},
+								{
+									"key": "lang",
+									"value": "ru"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "T_50_-55(er)_ru_neg",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Yandex-API-Key",
+								"value": "{{key_ya}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://{{baseURL}}?lat=-55&lon=-&lang=ru",
+							"protocol": "https",
+							"host": [
+								"{{baseURL}}"
+							],
+							"query": [
+								{
+									"key": "lat",
+									"value": "-55"
+								},
+								{
+									"key": "lon",
+									"value": "-"
+								},
+								{
+									"key": "lang",
+									"value": "ru"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "T_50_-55(er2)_ru_neg",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Yandex-API-Key",
+								"value": "{{key_ya}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://{{baseURL}}?lat=-55&lon=000000550000",
+							"protocol": "https",
+							"host": [
+								"{{baseURL}}"
+							],
+							"query": [
+								{
+									"key": "lat",
+									"value": "-55"
+								},
+								{
+									"key": "lon",
+									"value": "000000550000"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "T_50_-55(er3)_ru_neg",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Yandex-API-Key",
+								"value": "{{key_ya}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://{{baseURL}}?lat=-55&lon=z&lang=ru",
+							"protocol": "https",
+							"host": [
+								"{{baseURL}}"
+							],
+							"query": [
+								{
+									"key": "lat",
+									"value": "-55"
+								},
+								{
+									"key": "lon",
+									"value": "z"
+								},
+								{
+									"key": "lang",
+									"value": "ru"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "T_50_-55(er4)_ru_neg",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Yandex-API-Key",
+								"value": "{{key_ya}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://{{baseURL}}?lat=-55&lon=+50&lang=ru",
+							"protocol": "https",
+							"host": [
+								"{{baseURL}}"
+							],
+							"query": [
+								{
+									"key": "lat",
+									"value": "-55"
+								},
+								{
+									"key": "lon",
+									"value": "+50"
+								},
+								{
+									"key": "lang",
+									"value": "ru"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "T_50_-55_ru(er)_neg",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Yandex-API-Key",
+								"value": "{{key_ya}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://{{baseURL}}?lat=-55&lon=50&lang=43534",
+							"protocol": "https",
+							"host": [
+								"{{baseURL}}"
+							],
+							"query": [
+								{
+									"key": "lat",
+									"value": "-55"
+								},
+								{
+									"key": "lon",
+									"value": "50"
+								},
+								{
+									"key": "lang",
+									"value": "43534"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "key_ya",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "baseURL",
+			"value": "api.weather.yandex.ru/v2/forecast",
+			"type": "string"
+		}
+	]
+}
