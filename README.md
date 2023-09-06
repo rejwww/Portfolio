@@ -3,12 +3,12 @@
 # Обо мне
 Меня зовут Ангелина, начинающий тестировщик с техническим образованием.
 # Навыки и технологии
-Hard skills
+- Hard skills
 
 SQL,HTML/CSS,
 Postman,Jira,qase.io,Swagger
 
-Soft skills
+- Soft skills
 
 Адаптивность, ответственность, внимательность, терпение, умение работать в команде
 # Проекты
@@ -19,6 +19,7 @@ Soft skills
 В ходе работы были прооведены функциональное тестирование, UI/UX, Тестирование API
 
 Документация по проекту представлена по ссылке https://drive.google.com/drive/folders/1oCEer8aErkbDD0-7yKyq5seZCnHIoq0W?usp=sharing
+
 
 №2 Яндекс.Погода
 
