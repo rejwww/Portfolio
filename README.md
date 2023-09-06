@@ -23,6 +23,7 @@ Postman,Jira,qase.io,Swagger
 Дополнение к документации https://drive.google.com/drive/folders/1oCEer8aErkbDD0-7yKyq5seZCnHIoq0W?usp=sharing
 
 
+
 №2 Яндекс.Погода
 
 Основной задачей стояло тестирование API запрошенного заказчиком тарифа
