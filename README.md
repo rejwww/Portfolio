@@ -18,7 +18,9 @@ Postman,Jira,qase.io,Swagger
 
 В ходе работы были прооведены функциональное тестирование, UI/UX, Тестирование API
 
-Документация по проекту представлена по ссылке https://drive.google.com/drive/folders/1oCEer8aErkbDD0-7yKyq5seZCnHIoq0W?usp=sharing
+Основная документация по проекту представлена по ссылке https://docs.google.com/document/d/1kJ2OxDeOJhgxB8S1OJxYUwWn-TTdoCY6/edit?usp=sharing&ouid=110820235334663349816&rtpof=true&sd=true
+
+Дополнение к документации https://drive.google.com/drive/folders/1oCEer8aErkbDD0-7yKyq5seZCnHIoq0W?usp=sharing
 
 
 №2 Яндекс.Погода
